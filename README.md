@@ -2,5 +2,7 @@
 practical of Application development framework  
 Practical mainly consisit **Python language** and Database connectivity using Python
 
-#technology
+**technology**
 **Python**
+**Mysql Workbench**
+**Jupyternotebook**
