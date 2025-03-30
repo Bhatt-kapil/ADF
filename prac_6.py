@@ -7,15 +7,15 @@ def get_db_connection():
     return mysql.connector.connect(
         host='localhost',
         user='root',
-        password='Yuki_8686009',
-        database='sekai'
+        password='Yuki_8686009', #add your password
+        database='sekai' # change it with your database name
     )
 
 @app.route('/')
 def index():
     conn = get_db_connection()
     cursor = conn.cursor(dictionary=True)
-    cursor.execute("SELECT * FROM student")
+    cursor.execute("SELECT * FROM student")  #use your table name
     users = cursor.fetchall()
     conn.close()
     return render_template('index.html', users=users)
